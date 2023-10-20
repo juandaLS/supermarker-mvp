@@ -37,7 +37,7 @@
             BtnDelete = new Button();
             BtnEdit = new Button();
             BtnNew = new Button();
-            dataGridView1 = new DataGridView();
+            DgPayMode = new DataGridView();
             BtnSearch = new Button();
             TxtSearch = new TextBox();
             label2 = new Label();
@@ -54,7 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
             tabPagePayModeList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DgPayMode).BeginInit();
             tabPagePayModeDetail.SuspendLayout();
             SuspendLayout();
             // 
@@ -106,7 +106,7 @@
             tabPagePayModeList.Controls.Add(BtnDelete);
             tabPagePayModeList.Controls.Add(BtnEdit);
             tabPagePayModeList.Controls.Add(BtnNew);
-            tabPagePayModeList.Controls.Add(dataGridView1);
+            tabPagePayModeList.Controls.Add(DgPayMode);
             tabPagePayModeList.Controls.Add(BtnSearch);
             tabPagePayModeList.Controls.Add(TxtSearch);
             tabPagePayModeList.Controls.Add(label2);
@@ -154,18 +154,18 @@
             BtnNew.TabIndex = 4;
             BtnNew.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // DgPayMode
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(8, 102);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(520, 237);
-            dataGridView1.TabIndex = 3;
+            DgPayMode.AllowUserToAddRows = false;
+            DgPayMode.AllowUserToDeleteRows = false;
+            DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgPayMode.Location = new Point(8, 102);
+            DgPayMode.Name = "DgPayMode";
+            DgPayMode.ReadOnly = true;
+            DgPayMode.RowHeadersWidth = 62;
+            DgPayMode.RowTemplate.Height = 33;
+            DgPayMode.Size = new Size(520, 237);
+            DgPayMode.TabIndex = 3;
             // 
             // BtnSearch
             // 
@@ -297,7 +297,7 @@
             tabControl1.ResumeLayout(false);
             tabPagePayModeList.ResumeLayout(false);
             tabPagePayModeList.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DgPayMode).EndInit();
             tabPagePayModeDetail.ResumeLayout(false);
             tabPagePayModeDetail.PerformLayout();
             ResumeLayout(false);
@@ -314,7 +314,7 @@
         private Label label2;
         private TabPage tabPagePayModeDetail;
         private Button BtnSearch;
-        private DataGridView dataGridView1;
+        private DataGridView DgPayMode;
         private Button BtnClose;
         private Button BtnDelete;
         private Button BtnEdit;

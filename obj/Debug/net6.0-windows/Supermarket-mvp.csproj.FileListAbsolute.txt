@@ -44,3 +44,4 @@ C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermar
 C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.csproj.CopyComplete
 C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.MainView.resources
 C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.ProductView.resources
+C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.ProvidersView.resources

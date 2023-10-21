@@ -84,31 +84,38 @@ namespace Supermarket_mvp.Views
         private bool isSuccessful;
         private string message;
 
-        public string ProvidersId {
+        public string ProvidersId
+        {
             get { return TxtProvidersId.Text; }
             set { TxtProvidersId.Text = value; }
         }
-        public string ProvidersName {
+        public string ProvidersName
+        {
             get { return TxtProvidersName.Text; }
             set { TxtProvidersName.Text = value; }
         }
-        public string ProvidersObservation {
+        public string ProvidersObservation
+        {
             get { return TxtProvidersObservation.Text; }
             set { TxtProvidersObservation.Text = value; }
         }
-        public string SearchValue {
+        public string SearchValue
+        {
             get { return TxtSearch.Text; }
             set { TxtSearch.Text = value; }
         }
-        public bool IsEdit {
+        public bool IsEdit
+        {
             get { return isEdit; }
             set { isEdit = value; }
         }
-        public bool IsSuccessful {
+        public bool IsSuccessful
+        {
             get { return isSuccessful; }
             set { isSuccessful = value; }
         }
-        public string Message {
+        public string Message
+        {
             get { return message; }
             set { message = value; }
         }

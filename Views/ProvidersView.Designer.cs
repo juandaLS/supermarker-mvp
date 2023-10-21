@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
             tabControl1 = new TabControl();
             tabPageProvidersList = new TabPage();
-            tabPageProvidersDetail = new TabPage();
-            label2 = new Label();
-            TxtSearch = new TextBox();
+            DgProviders = new DataGridView();
             BtnClose = new Button();
             BtnDelete = new Button();
             BtnEdit = new Button();
             BtnNew = new Button();
             BtnSearch = new Button();
-            DgProviders = new DataGridView();
+            TxtSearch = new TextBox();
+            label2 = new Label();
+            tabPageProvidersDetail = new TabPage();
             BtnCancel = new Button();
             BtnSave = new Button();
             TxtProvidersObservation = new TextBox();
@@ -54,8 +54,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
             tabPageProvidersList.SuspendLayout();
-            tabPageProvidersDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DgProviders).BeginInit();
+            tabPageProvidersDetail.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -68,16 +68,6 @@
             panel1.Size = new Size(899, 150);
             panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(205, 48);
-            label1.Name = "label1";
-            label1.Size = new Size(153, 48);
-            label1.TabIndex = 0;
-            label1.Text = "Provider";
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.providers;
@@ -87,6 +77,16 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(205, 48);
+            label1.Name = "label1";
+            label1.Size = new Size(153, 48);
+            label1.TabIndex = 0;
+            label1.Text = "Provider";
             // 
             // tabControl1
             // 
@@ -117,40 +117,19 @@
             tabPageProvidersList.Text = "Provider List";
             tabPageProvidersList.UseVisualStyleBackColor = true;
             // 
-            // tabPageProvidersDetail
+            // DgProviders
             // 
-            tabPageProvidersDetail.Controls.Add(BtnCancel);
-            tabPageProvidersDetail.Controls.Add(BtnSave);
-            tabPageProvidersDetail.Controls.Add(TxtProvidersObservation);
-            tabPageProvidersDetail.Controls.Add(TxtProvidersName);
-            tabPageProvidersDetail.Controls.Add(label5);
-            tabPageProvidersDetail.Controls.Add(label4);
-            tabPageProvidersDetail.Controls.Add(TxtProvidersId);
-            tabPageProvidersDetail.Controls.Add(label3);
-            tabPageProvidersDetail.Location = new Point(4, 34);
-            tabPageProvidersDetail.Name = "tabPageProvidersDetail";
-            tabPageProvidersDetail.Padding = new Padding(3);
-            tabPageProvidersDetail.Size = new Size(891, 379);
-            tabPageProvidersDetail.TabIndex = 1;
-            tabPageProvidersDetail.Text = "Provider Detail";
-            tabPageProvidersDetail.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(41, 31);
-            label2.Name = "label2";
-            label2.Size = new Size(135, 25);
-            label2.TabIndex = 0;
-            label2.Text = "Search Provider";
-            // 
-            // TxtSearch
-            // 
-            TxtSearch.Location = new Point(41, 70);
-            TxtSearch.Name = "TxtSearch";
-            TxtSearch.PlaceholderText = "Data to search";
-            TxtSearch.Size = new Size(353, 31);
-            TxtSearch.TabIndex = 1;
+            DgProviders.AllowUserToAddRows = false;
+            DgProviders.AllowUserToDeleteRows = false;
+            DgProviders.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DgProviders.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgProviders.Location = new Point(41, 118);
+            DgProviders.Name = "DgProviders";
+            DgProviders.ReadOnly = true;
+            DgProviders.RowHeadersWidth = 62;
+            DgProviders.RowTemplate.Height = 33;
+            DgProviders.Size = new Size(360, 225);
+            DgProviders.TabIndex = 17;
             // 
             // BtnClose
             // 
@@ -202,19 +181,40 @@
             BtnSearch.TabIndex = 12;
             BtnSearch.UseVisualStyleBackColor = true;
             // 
-            // DgProviders
+            // TxtSearch
             // 
-            DgProviders.AllowUserToAddRows = false;
-            DgProviders.AllowUserToDeleteRows = false;
-            DgProviders.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DgProviders.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgProviders.Location = new Point(41, 118);
-            DgProviders.Name = "DgProviders";
-            DgProviders.ReadOnly = true;
-            DgProviders.RowHeadersWidth = 62;
-            DgProviders.RowTemplate.Height = 33;
-            DgProviders.Size = new Size(360, 225);
-            DgProviders.TabIndex = 17;
+            TxtSearch.Location = new Point(41, 70);
+            TxtSearch.Name = "TxtSearch";
+            TxtSearch.PlaceholderText = "Data to search";
+            TxtSearch.Size = new Size(353, 31);
+            TxtSearch.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(41, 31);
+            label2.Name = "label2";
+            label2.Size = new Size(135, 25);
+            label2.TabIndex = 0;
+            label2.Text = "Search Provider";
+            // 
+            // tabPageProvidersDetail
+            // 
+            tabPageProvidersDetail.Controls.Add(BtnCancel);
+            tabPageProvidersDetail.Controls.Add(BtnSave);
+            tabPageProvidersDetail.Controls.Add(TxtProvidersObservation);
+            tabPageProvidersDetail.Controls.Add(TxtProvidersName);
+            tabPageProvidersDetail.Controls.Add(label5);
+            tabPageProvidersDetail.Controls.Add(label4);
+            tabPageProvidersDetail.Controls.Add(TxtProvidersId);
+            tabPageProvidersDetail.Controls.Add(label3);
+            tabPageProvidersDetail.Location = new Point(4, 34);
+            tabPageProvidersDetail.Name = "tabPageProvidersDetail";
+            tabPageProvidersDetail.Padding = new Padding(3);
+            tabPageProvidersDetail.Size = new Size(891, 379);
+            tabPageProvidersDetail.TabIndex = 1;
+            tabPageProvidersDetail.Text = "Provider Detail";
+            tabPageProvidersDetail.UseVisualStyleBackColor = true;
             // 
             // BtnCancel
             // 
@@ -303,9 +303,9 @@
             tabControl1.ResumeLayout(false);
             tabPageProvidersList.ResumeLayout(false);
             tabPageProvidersList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DgProviders).EndInit();
             tabPageProvidersDetail.ResumeLayout(false);
             tabPageProvidersDetail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DgProviders).EndInit();
             ResumeLayout(false);
         }
 

@@ -256,18 +256,18 @@
             label5.AutoSize = true;
             label5.Location = new Point(50, 218);
             label5.Name = "label5";
-            label5.Size = new Size(59, 25);
+            label5.Size = new Size(109, 25);
             label5.TabIndex = 3;
-            label5.Text = "label5";
+            label5.Text = "Observation";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(50, 129);
             label4.Name = "label4";
-            label4.Size = new Size(59, 25);
+            label4.Size = new Size(126, 25);
             label4.TabIndex = 2;
-            label4.Text = "label4";
+            label4.Text = "Product Name";
             // 
             // TxtProductId
             // 
@@ -296,7 +296,7 @@
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Name = "ProductView";
-            Text = "ProductView";
+            Text = "Product Management";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

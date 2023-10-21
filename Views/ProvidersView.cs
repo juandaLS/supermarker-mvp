@@ -131,12 +131,12 @@ namespace Supermarket_mvp.Views
         {
             DgProviders.DataSource = providersList;
         }
-        private static ProductView instance;
-        public static ProductView GetInstance(Form parentContainer)
+        private static ProvidersView instance;
+        public static ProvidersView GetInstance(Form parentContainer)
         {
             if (instance == null || instance.IsDisposed)
             {
-                instance = new ProductView();
+                instance = new ProvidersView();
                 instance.MdiParent = parentContainer;
 
                 instance.FormBorderStyle = FormBorderStyle.None;

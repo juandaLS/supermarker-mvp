@@ -49,7 +49,7 @@ namespace Supermarket_mvp.Presenters
 
         private void SaveProviders(object? sender, EventArgs e)
         {
-            var providers = new ProductModel();
+            var providers = new ProvidersModel();
             providers.Id = Convert.ToInt32(view.ProvidersId);
             providers.Name = view.ProvidersName;
             providers.Observation = view.ProvidersObservation;
@@ -65,7 +65,7 @@ namespace Supermarket_mvp.Presenters
                 else
                 {
                     repository.Add(providers);
-                    view.Message = "Product added successfuly";
+                    view.Message = "Providers added successfuly";
                 }
                 view.IsSuccessful = true;
                 loadAllProvidersList();

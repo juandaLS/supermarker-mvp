@@ -82,6 +82,7 @@ namespace Supermarket_mvp.Views
                 tabControl1.TabPages.Add(tabPagePayModeDetail);
                 tabPagePayModeDetail.Text = "Add New Pay Mode";
             };
+
             BtnEdit.Click += delegate
             {
                 EditEvent?.Invoke(this, EventArgs.Empty);

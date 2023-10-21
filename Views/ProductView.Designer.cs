@@ -154,7 +154,7 @@
             // 
             // BtnSearch
             // 
-            BtnSearch.Image = Properties.Resources.search_small;
+            BtnSearch.Image = Properties.Resources.Search;
             BtnSearch.Location = new Point(411, 50);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(60, 49);

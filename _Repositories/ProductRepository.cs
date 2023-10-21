@@ -39,7 +39,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM Product WHERE Pay_Mode_Id = @id";
+                command.CommandText = "DELETE FROM Product WHERE Product_Id = @id";
                 command.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 command.ExecuteNonQuery();
             }
@@ -71,7 +71,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM Product ORDER BY Pay_Mode_Id DESC";
+                command.CommandText = "SELECT * FROM Product ORDER BY Product_Id DESC";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())

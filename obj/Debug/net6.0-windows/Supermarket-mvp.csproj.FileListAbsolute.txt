@@ -43,3 +43,4 @@ C:\Users\jualonsa\source\repos\Supermarket-mvp\bin\Debug\net6.0-windows\runtimes
 C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.csproj.AssemblyReference.cache
 C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.csproj.CopyComplete
 C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.MainView.resources
+C:\Users\jualonsa\source\repos\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Views.ProductView.resources

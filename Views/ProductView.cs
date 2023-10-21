@@ -10,42 +10,42 @@ using System.Windows.Forms;
 
 namespace Supermarket_mvp.Views
 {
-    public partial class ProductView : Form , IProductView
+    public partial class ProductView : Form, IProductView
     {
         private bool isEdit;
         private bool isSuccessful;
         private string message;
-        public string ProductId 
+        public string ProductId
         {
             get { return TxtProductId.Text; }
             set { TxtProductId.Text = value; }
         }
-        public string ProductObservation 
+        public string ProductObservation
         {
             get { return TxtProductObservation.Text; }
-            set { TxtProductObservation .Text = value; }
+            set { TxtProductObservation.Text = value; }
         }
-        public string SearchValue 
+        public string SearchValue
         {
             get { return TxtSearch.Text; }
             set { TxtSearch.Text = value; }
         }
-        public bool IsEdit 
+        public bool IsEdit
         {
             get { return isEdit; }
             set { isEdit = value; }
         }
-        public bool IsSuccessful 
+        public bool IsSuccessful
         {
             get { return isSuccessful; }
             set { isSuccessful = value; }
         }
-        public string Message 
+        public string Message
         {
             get { return message; }
             set { message = value; }
         }
-        public string ProductName 
+        public string ProductName
         {
             get { return TxtProductName.Text; }
             set { TxtProductName.Text = value; }

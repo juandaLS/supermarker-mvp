@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Supermarket_mvp.Views
 {
-    public partial class CategorieView : Form
+    public partial class CategorieView : Form, ICategorieView
     {
 
         public CategorieView()
@@ -128,7 +128,7 @@ namespace Supermarket_mvp.Views
         public event EventHandler SaveEvent;
         public event EventHandler CancelEvent;
 
-        public void SetProvidersListBildingSource(BindingSource CategorieList)
+        public void SetCategorieListBildingSource(BindingSource CategorieList)
         {
             DgCategorie.DataSource = CategorieList;
         }

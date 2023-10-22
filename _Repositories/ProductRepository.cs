@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using Microsoft.Data;
 using System.Data;
-using Supermarket_mvp.Models;
 
 namespace Supermarket_mvp._Repositories
 {

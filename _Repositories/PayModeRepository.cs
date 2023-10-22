@@ -24,7 +24,7 @@ namespace Supermarket_mvp._Repositories
             { 
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO PayMode VALUES (@name, @observation";
+                command.CommandText = "INSERT INTO PayMode VALUES (@name, @observation)";
                 command.Parameters.Add("@name",SqlDbType.NVarChar).Value=payModeModel.Name;
                 command.Parameters.Add("@observation", SqlDbType.NVarChar).Value = payModeModel.Observation;
                 command.ExecuteNonQuery();
@@ -96,7 +96,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = @"SELECT * FROM PayMoDE
+                command.CommandText = @"SELECT * FROM PayMode
                                         WHERE Pay_Mode_Id=@id or Pay_Mode_Name LIKE @name+ '%'
                                         ORDER By Pay_Mode_Id DESC";
                 command.Parameters.Add("@id",SqlDbType.Int).Value = payModeId;

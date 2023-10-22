@@ -93,11 +93,11 @@
             // 
             tabControl1.Controls.Add(tabPageProvidersList);
             tabControl1.Controls.Add(tabPageProvidersDetail);
-            tabControl1.Dock = DockStyle.Top;
+            tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 150);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(899, 417);
+            tabControl1.Size = new Size(899, 421);
             tabControl1.TabIndex = 1;
             // 
             // tabPageProvidersList
@@ -113,7 +113,7 @@
             tabPageProvidersList.Location = new Point(4, 34);
             tabPageProvidersList.Name = "tabPageProvidersList";
             tabPageProvidersList.Padding = new Padding(3);
-            tabPageProvidersList.Size = new Size(891, 379);
+            tabPageProvidersList.Size = new Size(891, 383);
             tabPageProvidersList.TabIndex = 0;
             tabPageProvidersList.Text = "Provider List";
             tabPageProvidersList.UseVisualStyleBackColor = true;
@@ -123,13 +123,14 @@
             DgProviders.AllowUserToAddRows = false;
             DgProviders.AllowUserToDeleteRows = false;
             DgProviders.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DgProviders.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgProviders.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgProviders.Location = new Point(41, 118);
             DgProviders.Name = "DgProviders";
             DgProviders.ReadOnly = true;
             DgProviders.RowHeadersWidth = 62;
             DgProviders.RowTemplate.Height = 33;
-            DgProviders.Size = new Size(360, 225);
+            DgProviders.Size = new Size(360, 229);
             DgProviders.TabIndex = 17;
             // 
             // BtnClose

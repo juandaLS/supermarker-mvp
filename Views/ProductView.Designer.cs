@@ -82,10 +82,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Gill Sans Ultra Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(197, 49);
             label1.Name = "label1";
-            label1.Size = new Size(144, 48);
+            label1.Size = new Size(204, 50);
             label1.TabIndex = 0;
             label1.Text = "Product";
             // 
@@ -93,11 +93,11 @@
             // 
             tabControl1.Controls.Add(tabPageProductList);
             tabControl1.Controls.Add(tabPageProductDetail);
-            tabControl1.Dock = DockStyle.Top;
+            tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 150);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(891, 437);
+            tabControl1.Size = new Size(891, 434);
             tabControl1.TabIndex = 1;
             // 
             // tabPageProductList
@@ -113,7 +113,7 @@
             tabPageProductList.Location = new Point(4, 34);
             tabPageProductList.Name = "tabPageProductList";
             tabPageProductList.Padding = new Padding(3);
-            tabPageProductList.Size = new Size(883, 399);
+            tabPageProductList.Size = new Size(883, 396);
             tabPageProductList.TabIndex = 0;
             tabPageProductList.Text = "Product List";
             tabPageProductList.UseVisualStyleBackColor = true;
@@ -163,13 +163,14 @@
             DgProduct.AllowUserToAddRows = false;
             DgProduct.AllowUserToDeleteRows = false;
             DgProduct.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DgProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgProduct.Location = new Point(24, 134);
             DgProduct.Name = "DgProduct";
             DgProduct.ReadOnly = true;
             DgProduct.RowHeadersWidth = 62;
             DgProduct.RowTemplate.Height = 33;
-            DgProduct.Size = new Size(360, 225);
+            DgProduct.Size = new Size(360, 222);
             DgProduct.TabIndex = 3;
             // 
             // BtnSearch
@@ -213,7 +214,7 @@
             tabPageProductDetail.Location = new Point(4, 34);
             tabPageProductDetail.Name = "tabPageProductDetail";
             tabPageProductDetail.Padding = new Padding(3);
-            tabPageProductDetail.Size = new Size(883, 399);
+            tabPageProductDetail.Size = new Size(883, 396);
             tabPageProductDetail.TabIndex = 1;
             tabPageProductDetail.Text = "Product Detail";
             tabPageProductDetail.UseVisualStyleBackColor = true;

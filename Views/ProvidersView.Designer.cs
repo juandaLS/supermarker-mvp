@@ -82,10 +82,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Gill Sans Ultra Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(205, 48);
             label1.Name = "label1";
-            label1.Size = new Size(153, 48);
+            label1.Size = new Size(221, 50);
             label1.TabIndex = 0;
             label1.Text = "Provider";
             // 

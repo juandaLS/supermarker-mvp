@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PayModeView));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label1 = new Label();
@@ -81,10 +82,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Gill Sans Ultra Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(168, 27);
             label1.Name = "label1";
-            label1.Size = new Size(177, 48);
+            label1.Size = new Size(234, 50);
             label1.TabIndex = 0;
             label1.Text = "Pay Mode";
             label1.Click += label1_Click;
@@ -175,7 +176,7 @@
             // 
             // BtnSearch
             // 
-            BtnSearch.Image = Properties.Resources.Search;
+            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
             BtnSearch.Location = new Point(554, 44);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(51, 51);
